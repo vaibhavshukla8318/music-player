@@ -1,0 +1,44 @@
+/* main-aside */
+.aside{
+    height: 90%;
+    width:28%;
+    background-color: #111727;
+    box-shadow: 5px 0 2px #090f1f;
+    overflow:auto;
+    overflow-x:hidden;
+    }
+    @media(max-width:600px){
+        .aside{
+            display:none;
+        }
+    }
+    .aside-nav{
+        justify-content: space-between;
+    }
+    .aside-nav .active{
+        color:red!important;
+        background-color: transparent!important;
+    }
+    .aside-nav .active::after{
+        content: '';
+        background-color:#c20909;
+        height: 2px;
+        display: block;
+    }
+    .aside_song{                        
+         background-color:#193353;
+         background: linear-gradient(90deg, rgba(0,0,4,1) 0%, rgba(24,49,82,1) 15%, rgba(25,51,83,1) 67%, rgba(0,212,255,0) 100%);
+         transition: all 0.3s ease;
+         overflow: auto;
+        }
+    .aside_song:hover{
+        border: solid thin grey;
+        cursor: pointer;
+        transform:translateY(-10px) ;
+    }
+    .aside_song_img{
+        width:50px;
+         height:50px;
+        object-fit: cover;
+    }
+    

@@ -1,0 +1,13 @@
+/* top-nav-bar */
+.top_nav_bar{
+    width: 100vw;    
+}
+.top_nav_bar .active{
+    color:red!important;
+}
+.top_nav_bar .active::after{
+    content: '';
+    background-color:#c20909;
+    height: 2px;
+    display: block;
+}
